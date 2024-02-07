@@ -13,7 +13,7 @@ jobs:
       - name: Azure Login
         uses: Azure/github-actions/login@master
         with:
-          AZURE_SUBSCRIPTION: "YOUR_AZURE_SUBSCRIPTION_NAME"
+          AZURE_SUBSCRIPTION: ${{vars.SUBSCRIPTION_NAME}}
         env:
           AZURE_SERVICE_APP_ID: ${{ secrets.AZURE_SERVICE_APP_ID }}
           AZURE_SERVICE_PASSWORD: ${{ secrets.AZURE_SERVICE_PASSWORD }}
