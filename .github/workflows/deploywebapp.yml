@@ -22,5 +22,5 @@ jobs:
       - name: Deploy to Web App
         uses: Azure/github-actions/webapp@master
         with:
-          AZURE_APP_NAME: "YOUR_LINUX_WEB_APP_NAME"
+          AZURE_APP_NAME: ${{vars.WEB_APP_NAME}}
           AZURE_APP_PACKAGE_LOCATION: "./"
